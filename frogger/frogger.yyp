@@ -2,7 +2,9 @@
   "resources": [
     {"id":{"name":"sfx_jump2","path":"sounds/sfx_jump2/sfx_jump2.yy",},"order":1,},
     {"id":{"name":"sfx_jump3","path":"sounds/sfx_jump3/sfx_jump3.yy",},"order":2,},
+    {"id":{"name":"bck_test","path":"sprites/bck_test/bck_test.yy",},"order":1,},
     {"id":{"name":"spr_frog","path":"sprites/spr_frog/spr_frog.yy",},"order":0,},
+    {"id":{"name":"spr_frogSmol","path":"sprites/spr_frogSmol/spr_frogSmol.yy",},"order":2,},
     {"id":{"name":"sfx_jump1","path":"sounds/sfx_jump1/sfx_jump1.yy",},"order":0,},
     {"id":{"name":"obj_frog","path":"objects/obj_frog/obj_frog.yy",},"order":0,},
     {"id":{"name":"sfx_jump5","path":"sounds/sfx_jump5/sfx_jump5.yy",},"order":4,},

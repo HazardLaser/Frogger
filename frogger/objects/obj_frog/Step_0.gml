@@ -12,3 +12,5 @@ speed = speed + 0.5;
 }
 
 image_angle = direction;
+//what does this code even do?
+//smooth movement

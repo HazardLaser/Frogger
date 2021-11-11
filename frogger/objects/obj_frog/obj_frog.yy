@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_frog",
-    "path": "sprites/spr_frog/spr_frog.yy",
+    "name": "spr_frogSmol",
+    "path": "sprites/spr_frogSmol/spr_frogSmol.yy",
   },
   "solid": false,
   "visible": true,
