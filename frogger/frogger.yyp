@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_frog","path":"sprites/spr_frog/spr_frog.yy",},"order":0,},
+    {"id":{"name":"obj_frog","path":"objects/obj_frog/obj_frog.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
