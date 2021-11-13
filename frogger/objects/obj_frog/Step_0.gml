@@ -54,6 +54,7 @@ if flagHop = true
 			vspeed = -moveSpeed
 			image_index = 1;
 			alarm[0] = hopRate
+			tempDirection = direction;
 		}
 		if direction = 270
 		{
@@ -61,6 +62,7 @@ if flagHop = true
 			vspeed = moveSpeed
 			image_index = 1;
 			alarm[0] = hopRate
+			tempDirection = direction;
 		}
 		if direction = 180
 		{
@@ -68,6 +70,7 @@ if flagHop = true
 			hspeed = -moveSpeed
 			image_index = 1;
 			alarm[0] = hopRate
+			tempDirection = direction;
 		}
 		if direction = 0
 		{
@@ -75,7 +78,8 @@ if flagHop = true
 			hspeed = moveSpeed
 			image_index = 1;
 			alarm[0] = hopRate
+			tempDirection = direction;
 		}
+		
 	}
-}	
-
+}
