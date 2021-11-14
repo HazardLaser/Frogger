@@ -1,7 +1,7 @@
 randomize();
 
 speed = 0;
-direction = 90;
+direction = 0;
 image_speed = 0;
 image_xscale = 0.75;
 image_yscale = 0.75;

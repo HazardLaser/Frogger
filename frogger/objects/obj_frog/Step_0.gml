@@ -51,34 +51,40 @@ if flagHop = true
 		if direction = 90
 		{
 			flagHop = false
-			vspeed = -moveSpeed
+			vspeed -= moveSpeed
 			image_index = 1;
 			alarm[0] = hopRate
 			tempDirection = direction;
+			image_angle = direction;
 		}
 		if direction = 270
 		{
-			flagHop = false
-			vspeed = moveSpeed
+			flagHop = false;
+			vspeed += moveSpeed;
 			image_index = 1;
-			alarm[0] = hopRate
+			alarm[0] = hopRate;
 			tempDirection = direction;
+			image_angle = direction;
 		}
 		if direction = 180
 		{
-			flagHop = false
-			hspeed = -moveSpeed
+			flagHop = false;
+			hspeed = -moveSpeed;
+			vspeed = 0;
 			image_index = 1;
-			alarm[0] = hopRate
+			alarm[0] = hopRate;
 			tempDirection = direction;
+			image_angle = direction;
 		}
 		if direction = 0
 		{
-			flagHop = false
-			hspeed = moveSpeed
+			flagHop = false;
+			hspeed = moveSpeed;
+			vspeed = 0;
 			image_index = 1;
-			alarm[0] = hopRate
+			alarm[0] = hopRate;
 			tempDirection = direction;
+			image_angle = direction;
 		}
 		
 	}
