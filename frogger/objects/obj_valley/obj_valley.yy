@@ -4,7 +4,7 @@
     "path": "sprites/spr_water/spr_water.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

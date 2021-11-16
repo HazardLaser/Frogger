@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_red",
-    "path": "sprites/spr_red/spr_red.yy",
+    "name": "spr_vulture",
+    "path": "sprites/spr_vulture/spr_vulture.yy",
   },
   "solid": false,
   "visible": true,
@@ -22,16 +22,15 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Spawners",
-    "path": "folders/Objects/Spawners.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_carSpawnerUp",
+  "name": "obj_vulture",
   "tags": [],
   "resourceType": "GMObject",
 }
