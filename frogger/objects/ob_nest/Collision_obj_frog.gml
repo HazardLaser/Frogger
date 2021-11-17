@@ -1,1 +1,1 @@
-lifetime = lifetime - 1;
+instance_create_layer(16,480, "frog", obj_frog);
