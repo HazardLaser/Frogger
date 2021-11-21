@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_cloud",
-    "path": "sprites/spr_cloud/spr_cloud.yy",
+    "name": "spr_cloudTEST",
+    "path": "sprites/spr_cloudTEST/spr_cloudTEST.yy",
   },
   "solid": false,
   "visible": true,

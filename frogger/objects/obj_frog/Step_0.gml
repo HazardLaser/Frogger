@@ -24,7 +24,7 @@ if myJumpNumb = 4
 }
 
 //controls for frog
-if flagHop = true
+if flagHop = true and global.frogType = 0
 {
 	//sets direction
 	if keyboard_check_pressed(ord("W"))
@@ -88,4 +88,93 @@ if flagHop = true
 		}
 		
 	}
+}
+if flagHop = true and global.frogType = 1
+{
+	//sets direction
+	if keyboard_check_pressed(ord("W"))
+	{
+		direction = 270
+	}
+	if keyboard_check_pressed(ord("A"))
+	{
+		direction = 0
+	}
+	if keyboard_check_pressed(ord("S"))
+	{
+		direction = 90
+	}
+	if keyboard_check_pressed(ord("D"))
+	{
+		direction = 180
+	}
+	
+	//jump with spacebar
+	if keyboard_check_pressed(vk_space)
+	{
+		audio_play_sound(jumpSound, 10, false);
+		if direction = 90
+		{
+			flagHop = false
+			vspeed -= moveSpeed
+			image_index = 3;
+			alarm[0] = hopRate
+			tempDirection = direction;
+			image_angle = direction;
+		}
+		if direction = 270
+		{
+			flagHop = false;
+			vspeed += moveSpeed;
+			image_index = 3;
+			alarm[0] = hopRate;
+			tempDirection = direction;
+			image_angle = direction;
+		}
+		if direction = 180
+		{
+			flagHop = false;
+			hspeed = -moveSpeed;
+			vspeed = 0;
+			image_index = 3;
+			alarm[0] = hopRate;
+			tempDirection = direction;
+			image_angle = direction;
+		}
+		if direction = 0
+		{
+			flagHop = false;
+			hspeed = moveSpeed;
+			vspeed = 0;
+			image_index = 3;
+			alarm[0] = hopRate;
+			tempDirection = direction;
+			image_angle = direction;
+		}
+		
+	}
+}
+
+if global.timeLimit = 0
+{
+	frogDeath(obj_manager, global.lives, self);
+	global.timeLimit = 3600;
+}
+
+if x < 16
+{
+	x = 16
+}
+if x > 1904
+{
+	x = 1904
+}
+
+if y < 16
+{
+	y = 16
+}
+if y > 944
+{
+	y = 944
 }

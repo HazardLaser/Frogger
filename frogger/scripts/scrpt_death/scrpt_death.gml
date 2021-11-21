@@ -7,7 +7,7 @@ function frogDeath(controller, life, frog){
 	//audio_play_sound(respawn);
 	global.lives -= 1;
 	if(global.lives > 0){
-		controller.alarm[0] = room_speed*1;
+		controller.alarm[0] = room_speed*2.25;
 	}
 	else{
 		controller.alarm[1] = room_speed*3;
