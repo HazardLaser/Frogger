@@ -8,4 +8,4 @@ draw_text_transformed(10,64,"Time: " + string(ceil(global.timeLimit/60)),.25,.25
 
 draw_text_transformed(10,96,"Lives: " + string(global.lives),.25,.25,0);
 
-draw_text_transformed(10,128,"Score: " + string(score),.25,.25,0);
+draw_text_transformed(10,128,"Score: " + string(global.frogScore),.25,.25,0);

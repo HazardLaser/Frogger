@@ -8,13 +8,13 @@ if(!once){
 	//scoring
 	if global.frogType = 0
 	{
-		score = score + 1
+		global.frogScore = global.frogScore + 1
 	}
 	if global.frogType = 1
 	{
-		score = score + 2
+		global.frogScore = global.frogScore + 2
 	}
-		score = score + (global.timeLimit/60)/100;
+		global.frogScore = global.frogScore + (global.timeLimit/60)/100;
 	
 	if(global.lives > 0){
 		global.bonusTime = global.timeLimit/2

@@ -1,2 +1,3 @@
-bigScore = 0; 
-highScore = 0;
+//intializes score variables
+global.frogScore = 0; 
+global.highScore = 0;
