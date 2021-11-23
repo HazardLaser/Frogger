@@ -1,11 +1,12 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+//make death and respawning easier with this lovely script
 function frogDeath(controller, life, frog){
+	//create the dead frog animation
 	instance_create_layer(x, y, "frog", obj_frogDead);
+	//destroy the frog
 	instance_destroy(frog);
-	show_debug_message(life);
-	//audio_play_sound(respawn);
+	//subtract life
 	global.lives -= 1;
+	//check life state. If no more lifes then it goes to the end game, but if there are life then we respawn
 	if(global.lives > 0){
 		controller.alarm[0] = room_speed*2.25;
 	}

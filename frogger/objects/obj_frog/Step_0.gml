@@ -27,25 +27,25 @@ if myJumpNumb = 4
 if flagHop = true and global.frogType = 0
 {
 	//sets direction
-	if keyboard_check_pressed(ord("W"))
+	if(keyboard_check_pressed(ord("W")) or gamepad_button_check_pressed(0, gp_padu))
 	{
 		direction = 90
 	}
-	if keyboard_check_pressed(ord("A"))
+	if (keyboard_check_pressed(ord("A")) or gamepad_button_check_pressed(0, gp_padl))
 	{
 		direction = 180
 	}
-	if keyboard_check_pressed(ord("S"))
+	if (keyboard_check_pressed(ord("S")) or gamepad_button_check_pressed(0, gp_padd))
 	{
 		direction = 270
 	}
-	if keyboard_check_pressed(ord("D"))
-	{
+	if (keyboard_check_pressed(ord("D")) or gamepad_button_check_pressed(0, gp_padr))
+	{ 
 		direction = 0
 	}
 	
 	//jump with spacebar
-	if keyboard_check_pressed(vk_space)
+	if (keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0, gp_face1))
 	{
 		audio_play_sound(jumpSound, 10, false);
 		if direction = 90
@@ -92,25 +92,25 @@ if flagHop = true and global.frogType = 0
 if flagHop = true and global.frogType = 1
 {
 	//sets direction
-	if keyboard_check_pressed(ord("W"))
+	if(keyboard_check_pressed(ord("W")) or gamepad_button_check_pressed(0, gp_padu))
 	{
 		direction = 270
 	}
-	if keyboard_check_pressed(ord("A"))
+	if (keyboard_check_pressed(ord("A")) or gamepad_button_check_pressed(0, gp_padl))
 	{
 		direction = 0
 	}
-	if keyboard_check_pressed(ord("S"))
+	if (keyboard_check_pressed(ord("S")) or gamepad_button_check_pressed(0, gp_padd))
 	{
 		direction = 90
 	}
-	if keyboard_check_pressed(ord("D"))
+	if (keyboard_check_pressed(ord("D")) or gamepad_button_check_pressed(0, gp_padr))
 	{
 		direction = 180
 	}
 	
 	//jump with spacebar
-	if keyboard_check_pressed(vk_space)
+	if (keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0, gp_face1))
 	{
 		audio_play_sound(jumpSound, 10, false);
 		if direction = 90
