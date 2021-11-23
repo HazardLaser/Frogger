@@ -1,6 +1,8 @@
+//stops the frog's current jump and lets the player jump again
 speed = 0;
 flagHop = true;
 
+//resets the sprite
 if global.frogType = 0
 {
 	image_index = 0;

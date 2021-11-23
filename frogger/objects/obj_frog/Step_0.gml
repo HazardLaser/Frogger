@@ -1,3 +1,4 @@
+//the sprite will always match the object's direction
 image_angle = direction;
 
 //sets a random jump sound to play
@@ -44,7 +45,7 @@ if flagHop = true and global.frogType = 0
 		direction = 0
 	}
 	
-	//jump with spacebar
+	//jump with spacebar in selected direction
 	if (keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0, gp_face1))
 	{
 		audio_play_sound(jumpSound, 10, false);
@@ -89,6 +90,9 @@ if flagHop = true and global.frogType = 0
 		
 	}
 }
+//the blue frog has reversed controls
+//this code initiates the reversal by flipping the directions
+//of the inputs
 if flagHop = true and global.frogType = 1
 {
 	//sets direction
@@ -109,7 +113,7 @@ if flagHop = true and global.frogType = 1
 		direction = 180
 	}
 	
-	//jump with spacebar
+	//jump with spacebar in selected direction
 	if (keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0, gp_face1))
 	{
 		audio_play_sound(jumpSound, 10, false);
@@ -155,12 +159,14 @@ if flagHop = true and global.frogType = 1
 	}
 }
 
+//if the timelimit reaches 0, kill the frog
 if global.timeLimit = 0
 {
 	frogDeath(obj_manager, global.lives, self);
 	global.timeLimit = 3600;
 }
 
+//the code below makes it so that the frog can't hop offscreen
 if x < 16
 {
 	x = 16
