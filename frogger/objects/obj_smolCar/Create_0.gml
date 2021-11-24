@@ -1,3 +1,5 @@
+//basically sometimes get a noise when it spawns in.
+//randomize which spawn
 isSound = irandom_range(0,20);
 mySound = irandom_range(0,2);
 

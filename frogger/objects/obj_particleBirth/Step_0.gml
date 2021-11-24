@@ -1,3 +1,4 @@
+//subtract lifetime and destroy once it's dead
 image_angle = direction;
 
 lifetime = lifetime - random_range(0.5,2);

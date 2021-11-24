@@ -1,3 +1,4 @@
+//make the particles have speed and variabilitiy, make them unique by changing properties
 direction = irandom_range(0,359);
 speed = random_range(0.2, 5);
 image_speed = 0;

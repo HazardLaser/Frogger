@@ -1,4 +1,6 @@
+//make sure this only gets filled once
 if(!once){
+	//make new frog and get rid of frog
 	myFrog = instance_nearest(x,y,obj_frog);
 	instance_destroy(myFrog);
 	instance_create_layer(x,y, "frog", obj_frogScore);

@@ -1,3 +1,4 @@
+//flags next steo
 step1 = false;
 step2 = true;
 
