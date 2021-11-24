@@ -1,4 +1,4 @@
-//Idk what you want from me. This is pretty self explanitory
+//This is pretty self explanitory
 draw_set_font(fnt_codersCrux);
 draw_set_color(c_white);
 draw_set_halign(fa_left);
